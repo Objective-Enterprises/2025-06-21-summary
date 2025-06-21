@@ -2,7 +2,10 @@
 type Wand = [core: string, length: number, material: string]
 
 // Enum for house names
-
+enum House {
+  Gryffindor = 'Gryffindor',
+  Slytherin = 'Slytherin'
+}
 
 // Type for character
 
