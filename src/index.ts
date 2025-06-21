@@ -18,8 +18,12 @@ interface Character {
 }
 
 // Array to store all characters
+const characters = []
 
 // Function to add a new character
+function addCharacter (character: Character) {
+  characters.push(character)
+}
 
 
 // Function to display all characters
