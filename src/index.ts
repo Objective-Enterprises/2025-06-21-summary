@@ -40,7 +40,13 @@ function filterByHouse (house: House) {
 }
 
 // Function to count wizards vs muggles
-
+function countByMagicalStatus () {
+  const wizards = characters.filter(character => character.isWizard)
+  return {
+    wizards: wizards.length,
+    muggles: characters.length - wizards.length
+  }
+}
 
 // Sample data
 // addCharacter({
