@@ -18,15 +18,19 @@ interface Character {
 }
 
 // Array to store all characters
-const characters = []
+const characters: Character[] = []
 
 // Function to add a new character
 function addCharacter (character: Character) {
   characters.push(character)
 }
 
-
 // Function to display all characters
+function displayCharacters () {
+  characters.forEach(character => {
+    console.log(character)
+  })
+}
 
 // Function to filter characters by house
 
