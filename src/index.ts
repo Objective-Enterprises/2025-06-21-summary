@@ -33,6 +33,11 @@ function displayCharacters () {
 }
 
 // Function to filter characters by house
+function filterByHouse (house: House) {
+  return characters.filter(character => {
+    return character.house === house
+  })
+}
 
 // Function to count wizards vs muggles
 
