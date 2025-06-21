@@ -8,7 +8,14 @@ enum House {
 }
 
 // Type for character
-
+interface Character {
+  name: string
+  age: number
+  isWizard: boolean
+  house: House
+  spells: string[]
+  wand: Wand
+}
 
 // Array to store all characters
 
