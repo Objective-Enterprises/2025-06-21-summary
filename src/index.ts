@@ -21,26 +21,31 @@ interface Character {
 const characters: Character[] = []
 
 // Function to add a new character
-function addCharacter (character: Character) {
+function addCharacter (character: Character): void {
   characters.push(character)
 }
 
 // Function to display all characters
-function displayCharacters () {
+function displayCharacters (): void {
   characters.forEach(character => {
     console.log(character)
   })
 }
 
 // Function to filter characters by house
-function filterByHouse (house: House) {
+function filterByHouse (house: House): Character[] {
   return characters.filter(character => {
     return character.house === house
   })
 }
 
+interface StatusCount {
+  wizards: number
+  muggles: number
+}
+
 // Function to count wizards vs muggles
-function countByMagicalStatus () {
+function countByMagicalStatus (): StatusCount {
   const wizards = characters.filter(character => character.isWizard)
   return {
     wizards: wizards.length,
